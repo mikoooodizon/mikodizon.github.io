@@ -69,9 +69,15 @@
     padding: 20px;
   }
   
-  .sidebar nav {
-    margin-top: 20px;
+  .sidebar-elements a{
+    text-align: left;
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: normal;
   }
+  
+ 
   
   .main-grid {
     margin: 0 50px;
