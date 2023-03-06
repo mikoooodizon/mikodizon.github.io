@@ -63,7 +63,7 @@
   .sidebar {
     width: 25%;
     height: 100%;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     float: left;
     margin-left: 50px;
     padding: 20px;
@@ -76,8 +76,6 @@
     line-height: 24px;
     letter-spacing: normal;
   }
-  
- 
   
   .main-grid {
     margin: 0 50px;
@@ -106,5 +104,19 @@
   
   a:hover {
     color: blue;
+  }
+  
+
+  footer {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }
   
