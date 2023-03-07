@@ -55,16 +55,19 @@ switch (pageName) {
 */
 
 
-// get the current page URL
-var currentPageUrl = window.location.href;
-
-// get all the sidebar links
-var sidebarLinks = document.querySelectorAll('.sidebar-elements a');
-
-// loop through each link and check if its href matches the current page URL
-sidebarLinks.forEach(function(link) {
-  if (link.href === currentPageUrl) {
-    // add the "active" class to the link if its href matches the current page URL
-    link.classList.add('active');
+window.onload = function() {
+    // get the current page URL
+    var currentPageUrl = window.location.href;
+  
+    // get all the sidebar links
+    var sidebarLinks = document.querySelectorAll('.sidebar-elements a');
+  
+    // loop through each link and check if its href matches the current page URL
+    sidebarLinks.forEach(function(link) {
+      if (link.href === currentPageUrl) {
+        // add the "active" class to the link if its href matches the current page URL
+        link.classList.add('active');
+      }
+    });
   }
-});
+  
