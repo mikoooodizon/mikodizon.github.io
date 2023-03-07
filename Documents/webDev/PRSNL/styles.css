@@ -27,12 +27,6 @@
     padding: 8px 16px;
     text-decoration: none;
   }
-
-  /* Style for the sidebar links on hover 
-  .sidebar a:hover {
-    color: blue;
-  }
-
   body {
     margin-left: 200px; /* Adjust the margin to match the width of the sidebar 
   
@@ -60,25 +54,41 @@
 }
 */
   
-  .sidebar {
+.sidebar {
     width: 25%;
     height: 100%;
     background-color: #ffffff;
     float: left;
-    margin-left: 50px;
     padding: 20px;
-  }
-  
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ccc;
+}
+
   .sidebar-elements a{
     text-align: left;
     color: #000000;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: normal;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    padding: 10px 20px;
   }
   
-  .main-grid {
+  /* .main-grid {
     margin: 0 50px;
+        margin-left: 20%;
+        padding: 20px;
+        border-left: 1px solid #ccc;
+      
+  } in case */ 
+
+  .content-grid {
+
+    border-left: 1px solid #d3d3d3;
+    margin: 0 0 0 20px;
+    padding: 20px;
   }
   
   .title-section {
@@ -102,7 +112,7 @@
     margin-bottom: 10px;
   }
   
-  a:hover {
+  a:hover {  /* Style for the sidebar links on hover */
     color: blue;
   }
   
@@ -118,5 +128,14 @@
     bottom: 0;
     width: 100%;
     text-align: center;
+  }
+  
+  /* - nice title .sidebar a.current {
+    font-weight: bold;
+  } */ 
+  
+  .active {
+    font-weight: bold;
+    font-size: medium;
   }
   
