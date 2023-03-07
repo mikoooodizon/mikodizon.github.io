@@ -1,4 +1,5 @@
- /* Style for the main grid container 
+ /* OG CSS 
+ Style for the main grid container 
   .main-grid {
         display: grid;
         grid-template-columns: 200px auto;
@@ -134,8 +135,12 @@
     font-weight: bold;
   } */ 
   
-  .active {
-    font-weight: lighter;
-    font-size: medium;
+  .sidebar-elements div {
+    padding: 10px;
   }
+  
+  .sidebar-elements div.active {
+    background-color: #eee;
+  }
+  
   
