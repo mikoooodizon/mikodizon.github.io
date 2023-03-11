@@ -56,15 +56,34 @@
         padding: 20px;
         border-left: 1px solid #ccc;
       
-  } in case */ 
-
-  .content-grid {
-
+  } in case 
+   .index-grid {
     border-left: 1px solid #d3d3d3;
     margin: 0 0 0 20px;
     padding: 20px;
   }
-  
+  */ 
+  .index-grid {
+    border-left: 5px solid #d3d3d3;
+    margin: 40 0 0 px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .index-grid h2 {
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .index-grid h3 {
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+
+    width: 120%;
+    
+  }
+ 
   .title-section {
     margin-bottom: 30px;
   }
