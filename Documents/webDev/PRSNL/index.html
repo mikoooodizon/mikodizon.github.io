@@ -18,6 +18,37 @@
           }
         </style>
 
+          <!-- Add the setCookie function here -->
+  <script>
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+  </script>
+  
+  <!-- Add the BadTracker code here -->
+  <script src="path/to/badtracker.js"></script>
+  <script>
+    var badTracker = new BadTracker('12345');
+    badTracker.trackPageView();
+    document.cookie = 'tracker_id=12345; domain=.example.com; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+  </script>
+  
+  <!-- Add the user location, server id, and device type code here -->
+  <script>
+    var userLocation = "New York";
+    var serverId = "9876";
+    var deviceType = "Desktop";
+    document.cookie = "user_location=" + userLocation + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    document.cookie = "server_id=" + serverId + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    document.cookie = "device_type=" + deviceType + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+  </script>
+
     </head>
 
 <!-- DON'T JUST VOMIT DIVS, use sections and navs, articles and asides-->
